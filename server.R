@@ -43,7 +43,7 @@ output$confirmed<-DT::renderDataTable({ ## the isolate() here is to cancel the d
 output$output.cf<-downloadHandler(filename=function(){paste("Confirmed-", input$ipt0$name,sep="")}, content = function(file){write.csv(isolate(values$df[!is.na(values$df$state),]), file)} )
 
 observeEvent(input$uncf,{
-  output$unconfirmed<-DT::renderDataTable({ ## the isolate() here is to cancel the dependency of "values$df", so that everytime you modify the LIST (e.g., add one more item to LIST so the table changes, the values$df changes), the "confirmed table" (although its output also depends on the valuesdf) won't re-execute until you hit the actionButton.
+  output$unconfirmed<-DT::renderDataTable({ ## the isolate() here is to cancel the dependency of "values$df", so that everytime you modify the LIST (e.g., add one more item to LIST so the table changes, the values$df changes), the "unconfirmed table" (although its output also depends on the valuesdf) won't re-execute until you hit the actionButton.
     isolate(values$df[is.na(values$df$state),][,c(1,4,9,11)])}, options=list(
       lengthMenu=list(c(50,100,-1), c("50","100","All")),
       pageLength=50))})
