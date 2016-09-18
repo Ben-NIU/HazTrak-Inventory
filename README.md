@@ -2,7 +2,7 @@
 #### (by Ben NIU from Michael L. Gross lab, Washington University in St. Louis)
 ### This web-based UI is designed to facilitate the recording of *HazTrak inventory* chemical ID/#.  
 
-
+![Alt text](pics/overview.png?raw=true "Optional Title")
 
 
 _______
