@@ -7,7 +7,10 @@ values<-reactiveValues()
 values$df<-NULL
 
 observeEvent(input$ipt0, {
+  if("Inventory.Number" %in% names(read.csv(input$ipt0$datapath))){
   values$df <- format(read.csv(input$ipt0$datapath))
+  } else {
+    values$df<-read.csv(input$ipt0$datapath, row.names = 1)} ## row.names = 1 specifies the column where you want it to be the row.name of your table.
 })
 
 observeEvent(input$GO, {
