@@ -18,7 +18,7 @@ observeEvent(input$ipt0, {
 
 observeEvent(input$GO, {
   if(!input$ipt1 %in% row.names(values$df) ){
-  newLine<-Add(input$ipt1, input$state, input$amount,input$unit,values$df)
+  newLine<-Add(input$ipt1, input$name,input$state, input$amount,input$unit,values$df)
   values$df<-rbind(newLine, values$df)
   } else {
     index<-which(row.names(values$df)==input$ipt1)

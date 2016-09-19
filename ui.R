@@ -9,14 +9,15 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       fileInput("ipt0",label=div(em("Click to upload csv!"), style="font-family:'marker felt';color:darkblue; font-size:12pt")),
-      hr(),
-      textInput("ipt1", label=div(em("Add items to inventory"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"), placeholder = "input inventory # to add"),
+      textInput("ipt1", label=div(em("Inventory #"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"), placeholder = "input inventory # to add"),
+      textInput("name", label=div(em("Chemical Name"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"), placeholder = "input chemical name here"),
       actionButton("GO", label=div(em("Add item!"), style="font-family:'marker felt';color:darkgreen; font-size:12pt")),
       br(),
       br(),
       radioButtons("state", label=div(em("Specify the state of chemical"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"), choices = c("Solid","Liquid","Gas"), selected = "Liquid"),
-      numericInput("amount", label=div(em("Specify the Amount"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"),value=1,width="50%"),
-      textInput("unit",  label=div(em("Specify the Unit"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"), placeholder = "e.g., ug"),
+      fluidRow(
+      column(5,numericInput("amount", label=div(em("Specify the Amount"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"),value=1,width="100%")),
+      column(5,textInput("unit",  label=div(em("Specify the Unit"), style="font-family:'marker felt';color:darkgreen; font-size:12pt"), placeholder = "e.g., ug", width = "100%"))),
       textInput("ipt2", label=div(em("Remove items from inventory"), style="font-family:'marker felt';color:darkred; font-size:12pt"), placeholder = "input inventory # then click delete"),
       actionButton("Delete",label=div(em("Delete item!"), style="font-family:'marker felt';color:darkred; font-size:12pt")),
       hr(),
