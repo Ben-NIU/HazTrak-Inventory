@@ -1,5 +1,5 @@
 # HazTrak-Inventory   
-#### (by Ben NIU from Michael L. Gross lab, Washington University in St. Louis)
+
 ### This web-based UI is designed to facilitate the recording of *HazTrak inventory* chemical ID/#.  
 
 ![Alt text](pics/overview.png?raw=true "Optional Title")
@@ -32,4 +32,7 @@ _______
 
 (ii). Under the "Confirmed Chemicals" Tab, you can download those confirmed chemicals ONLY by clicking the "Download Confirmed Chemicals!" button.
 
-(iii). Under the "Unconfirmed Chemicals" Tab, download the unconfirmed chemicals by clicking the "Download Unconfirmed Chemicals!" button.
+(iii). Under the "Unconfirmed Chemicals" Tab, download the unconfirmed chemicals by clicking the "Download Unconfirmed Chemicals!" button.  
+
+## LICENSE  
+### MIT
