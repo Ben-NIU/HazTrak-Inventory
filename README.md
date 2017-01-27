@@ -32,7 +32,12 @@ _______
 
 (ii). Under the "Confirmed Chemicals" Tab, you can download those confirmed chemicals ONLY by clicking the "Download Confirmed Chemicals!" button.
 
+<<<<<<< HEAD
 (iii). Under the "Unconfirmed Chemicals" Tab, download the unconfirmed chemicals by clicking the "Download Unconfirmed Chemicals!" button.  
+=======
+(iii). Under the "Unconfirmed Chemicals" Tab, download the unconfirmed chemicals by clicking the "Download Unconfirmed Chemicals!" button.
+
+>>>>>>> origin/master
 
 ## LICENSE  
 ### MIT
