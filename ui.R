@@ -1,7 +1,7 @@
 library(shinydashboard)
 
-dashboardPage(
-  dashboardHeader(title=span(p(strong("HazTrak Inventory Chemical List")), style="font-family:'bradley hand'; font-size;30pt"), titleWidth = 400),
+dashboardPage(skin="purple",
+  dashboardHeader(title=span(p(strong("Gross Lab HazTrak Inventory")), style="font-family:'bradley hand'; font-size;30pt"), titleWidth = 400),
   dashboardSidebar(
     sidebarMenu(
  
